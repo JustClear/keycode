@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Query key code easily.</title>
+    <style>
+    body {
+        font-size: 50rem;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        (function () {
+            document.addEventListener('keyup', function (event) {
+                event.preventDefault();
+                console.log(event.keyCode);
+                document.body.textContent = event.keyCode;
+            });
+        })();
+    </script>
+</body>
+</html>
